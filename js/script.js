@@ -10,13 +10,13 @@
  */
 function calculate () {
   // input
-  const lLength = parseInt(document.getElementById('l-length').value)
-  const wWidth = parseInt(document.getElementById('w-width').value)
-  const hHeight = parseInt(document.getElementById('h-height').value)
+  const length = parseInt(document.getElementById('length').value)
+  const width = parseInt(document.getElementById('width').value)
+  const height = parseInt(document.getElementById('height').value)
 
   // process
-  const volume = (lLength * wWidth * hHeight) / 3 
+  const volume = (length * width * height) / 3 
 
   // output
-  document.getElementById('volume').innerHTML = 'Volume is: ' + volume + ' mm²'
+  document.getElementById('area').innerHTML = 'The volume is: ' + volume.toFixed(2) + ' mm³'
 }
